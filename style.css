@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1e1e2f;
+  background: linear-gradient(135deg, #1e1e2f 0%, #2d1b4e 45%, #3d1f5c 70%, #1a1a2e 100%);
 }
 
 .calculator {
@@ -48,15 +48,20 @@ body {
   background: #3d3d55;
   color: #ffffff;
   cursor: pointer;
-  transition: background 0.15s ease;
+  box-shadow: 0 4px 0 #24243a, 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
+  transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .btn:hover {
   background: #4d4d6d;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 0 #24243a, 0 10px 14px rgba(0, 0, 0, 0.35);
 }
 
 .btn:active {
-  transform: scale(0.97);
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #24243a, 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .operator {
