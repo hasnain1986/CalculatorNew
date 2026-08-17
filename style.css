@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #bfe6f5 0%, #8fd3ee 45%, #6ec3e8 70%, #a8dff2 100%);
+  background: linear-gradient(135deg, #fff3b0 0%, #ffe066 45%, #ffd23f 70%, #fff59d 100%);
 }
 
 .calculator {
